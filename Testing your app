@@ -1,0 +1,7 @@
+# Set your service URL (replace with yours)
+URL="https://translator-api-1008547114412.us-central1.run.app"
+
+# Fire the test payload
+curl -X POST -H "Content-Type: application/json" \
+  -d '{"text": "The engineering team is deploying the new container to production tonight."}' \
+  $URL/translate
